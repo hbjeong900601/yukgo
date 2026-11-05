@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
   <meta name="theme-color" content="#111113" />
-  <title>YUK.GO 육고(肉庫) — 상위 1% 한우 암소 도축장 직공급 금고</title>
+  <title>YUK.GO 육고(肉庫) — 상위 1% 한우 암소 도축장 직공급 하우스</title>
   <meta name="description" content="유통을 잠그고, 한우의 본질을 열다. 자체 도축장 보유 · 농협 안심 한우 공식 납품 원육 그대로 중간 마진 0원 직공급 · 오직 100% 한우 암소 단독 취급." />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hbjeong900601.github.io/yukgo/" />
-  <meta property="og:title" content="YUK.GO 육고(肉庫) — 상위 1% 한우 암소 도축장 직공급 금고" />
+  <meta property="og:title" content="YUK.GO 육고(肉庫) — 상위 1% 한우 암소 도축장 직공급 하우스" />
   <meta property="og:description" content="백화점 쇼케이스에 가기 전, 최상급 원육을 가로채다. 직영 도축장 · 농협 안심 한우 납품 원육 노마진 반값 직송." />
   <meta property="og:image" content="https://hbjeong900601.github.io/yukgo/assets/bnb-tray-set.jpg" />
 
@@ -24,7 +24,7 @@
 <body id="top">
 
   <!-- ========================================================================
-       1. SIR.LOIN STYLE CLEAN HEADER & GNB TABS
+       1. SIR.LOIN STYLE CLEAN HEADER & GNB TABS (Refined Luxury Titles)
        ======================================================================== -->
   <header class="sirloin-header">
     <div class="header-inner">
@@ -56,30 +56,30 @@
           홈
         </button>
         <button class="gnb-tab-link highlight-tab" data-nav="open" onclick="handleGnbClick('all', '#all-products-section')">
-          금고열기<span class="tab-dot"></span>
+          시그니처 암소<span class="tab-dot"></span>
         </button>
-        <button class="gnb-tab-link" data-nav="daily" onclick="handleGnbClick('daily', '#all-products-section')">
-          일상반출<span class="tab-dot"></span>
+        <button class="gnb-tab-link" data-nav="dining" onclick="handleGnbClick('dining', '#all-products-section')">
+          구이·스테이크<span class="tab-dot"></span>
         </button>
-        <button class="gnb-tab-link highlight-tab" data-nav="secret" onclick="handleGnbClick('secret', '#all-products-section')">
-          시크릿코드<span class="tab-dot"></span>
+        <button class="gnb-tab-link highlight-tab" data-nav="special" onclick="handleGnbClick('special', '#all-products-section')">
+          당일도축 특선<span class="tab-dot"></span>
         </button>
         <button class="gnb-tab-link" data-nav="gift" onclick="handleGnbClick('gift', '#all-products-section')">
-          마스터금고
+          프레스티지 선물관
         </button>
         <button class="gnb-tab-link" data-nav="authority" onclick="scrollToSection('#authority-section')">
-          브랜드스토리
+          브랜드 스토리
         </button>
       </nav>
     </div>
   </header>
 
   <!-- ========================================================================
-       2. SINGLE-LINE SLIM NOTIFICATION BAR (Never wraps on mobile)
+       2. SINGLE-LINE SLIM NOTIFICATION BAR
        ======================================================================== -->
   <div class="slim-notice-bar" onclick="openTraceabilityModal('002-1498-8821')">
     <span class="notice-bell">🔔</span>
-    <span class="notice-text">직영 도축장 · 농협 안심 한우 원육 <strong>[중간 마진 0원 · 반값 반출]</strong></span>
+    <span class="notice-text">직영 도축장 · 농협 안심 한우 원육 <strong>[중간 마진 0원 · 반값 직공급]</strong></span>
   </div>
 
   <!-- ========================================================================
@@ -88,13 +88,13 @@
   <section class="hero-slider-wrap" id="hero-vault">
     <div class="hero-slide-viewport" id="hero-touch-area">
       <!-- Slide 1 -->
-      <div class="hero-slide-item active" data-slide="0" onclick="handleGnbClick('all', '#all-products-section')">
+      <div class="hero-slide-item active" data-slide="0" onclick="goToProductDetail('yg-best-01')">
         <img src="assets/bnb-tray-set.jpg" alt="육고 6구 블랙 트레이 한우 암소 세트" class="hero-slide-bg" />
         <div class="hero-slide-gradient"></div>
         <div class="hero-slide-copy">
           <h1 class="hero-main-heading">
             유통을 잠그고, 한우의 본질을 열다<br />
-            백화점 반값 도축장 직공급 금고
+            백화점 반값 도축장 직공급 하우스
           </h1>
           <p class="hero-sub-copy">
             자체 도축장 보유 · 농협 안심 한우 동일 원육 노마진 직송
@@ -103,7 +103,7 @@
       </div>
 
       <!-- Slide 2 -->
-      <div class="hero-slide-item" data-slide="1" onclick="handleGnbClick('daily', '#all-products-section')">
+      <div class="hero-slide-item" data-slide="1" onclick="goToProductDetail('yg-best-02')">
         <img src="assets/cut-shrimp-cap.jpg" alt="1++ 한우 암소 새우살" class="hero-slide-bg" />
         <div class="hero-slide-gradient"></div>
         <div class="hero-slide-copy">
@@ -118,7 +118,7 @@
       </div>
 
       <!-- Slide 3 -->
-      <div class="hero-slide-item" data-slide="2" onclick="handleGnbClick('secret', '#all-products-section')">
+      <div class="hero-slide-item" data-slide="2" onclick="goToProductDetail('yg-best-03')">
         <img src="assets/cut-chateaubriand.jpg" alt="100% 한우 암소 샤토브리앙 안심과 채끝" class="hero-slide-bg" />
         <div class="hero-slide-gradient"></div>
         <div class="hero-slide-copy">
@@ -133,12 +133,12 @@
       </div>
 
       <!-- Slide 4 -->
-      <div class="hero-slide-item" data-slide="3" onclick="handleGnbClick('gift', '#all-products-section')">
-        <img src="assets/master-gift-set.jpg" alt="육고 마스터 금고 보자기 선물세트" class="hero-slide-bg" />
+      <div class="hero-slide-item" data-slide="3" onclick="goToProductDetail('yg-all-06')">
+        <img src="assets/master-gift-set.jpg" alt="육고 프레스티지 보자기 선물세트" class="hero-slide-bg" />
         <div class="hero-slide-gradient"></div>
         <div class="hero-slide-copy">
           <h2 class="hero-main-heading">
-            아무나 못 구하는 비밀 금고의 선물<br />
+            아무나 못 구하는 상위 1% 한우 선물<br />
             차콜 실크 보자기 & 황동 인장 기프트
           </h2>
           <p class="hero-sub-copy">
@@ -164,38 +164,38 @@
         <div class="circle-thumb signature-gold-circle">
           <div>선물은<br />육<span class="faded">고</span></div>
         </div>
-        <span class="circle-label">선물세트</span>
+        <span class="circle-label">명품선물</span>
       </button>
 
       <button class="quick-circle-item" onclick="handleGnbClick('all', '#all-products-section')">
         <div class="circle-thumb">
           <img src="assets/bnb-raw-cuts.jpg" alt="한우 암소 1++" />
         </div>
-        <span class="circle-label">한우암소</span>
+        <span class="circle-label">시그니처암소</span>
       </button>
 
-      <button class="quick-circle-item" onclick="handleGnbClick('daily', '#all-products-section')">
+      <button class="quick-circle-item" onclick="handleGnbClick('dining', '#all-products-section')">
         <div class="circle-thumb">
-          <img src="assets/cut-chateaubriand.jpg" alt="일상 반출" />
+          <img src="assets/cut-chateaubriand.jpg" alt="구이 스테이크" />
         </div>
-        <span class="circle-label">일상반출</span>
+        <span class="circle-label">구이·스테이크</span>
       </button>
 
-      <button class="quick-circle-item" onclick="handleGnbClick('secret', '#all-products-section')">
+      <button class="quick-circle-item" onclick="handleGnbClick('special', '#all-products-section')">
         <div class="circle-thumb">
-          <img src="assets/cut-shrimp-cap.jpg" alt="시크릿 코드 새우살" />
+          <img src="assets/cut-shrimp-cap.jpg" alt="당일도축 특선" />
         </div>
-        <span class="circle-label">시크릿코드</span>
+        <span class="circle-label">당일도축특선</span>
       </button>
 
-      <button class="quick-circle-item" onclick="handleGnbClick('secret', '#all-products-section')">
+      <button class="quick-circle-item" onclick="goToProductDetail('yg-all-04')">
         <div class="circle-thumb">
-          <img src="assets/cut-galbi-special.jpg" alt="특수부위 살치·갈비" />
+          <img src="assets/cut-galbi-special.jpg" alt="희소 특수부위" />
         </div>
-        <span class="circle-label">특수부위</span>
+        <span class="circle-label">희소특수부위</span>
       </button>
 
-      <button class="quick-circle-item" onclick="handleGnbClick('gift', '#all-products-section')">
+      <button class="quick-circle-item" onclick="goToProductDetail('yg-all-06')">
         <div class="circle-thumb prestige-black-circle">
           <span class="prestige-frame">肉</span>
         </div>
@@ -223,23 +223,23 @@
 
       <button class="quick-circle-item" onclick="scrollToSection('#verified-section')">
         <div class="circle-thumb">
-          <img src="assets/verified-package.jpg" alt="출고 승인서" />
+          <img src="assets/verified-package.jpg" alt="보자기·봉인패키지" />
         </div>
-        <span class="circle-label">출고승인서</span>
+        <span class="circle-label">보자기패키지</span>
       </button>
 
       <button class="quick-circle-item" onclick="openAuthorityBenefitModal()">
         <div class="circle-thumb sphere-grade-circle">
           V
         </div>
-        <span class="circle-label">등급혜택</span>
+        <span class="circle-label">멤버십혜택</span>
       </button>
     </div>
 
-    <!-- Sirloin-style Horizontal Grade / Authority Banner with 3D Metallic Pillars -->
+    <!-- Sirloin-style Horizontal Grade / Authority Banner -->
     <div class="sirloin-benefit-banner" onclick="openAuthorityBenefitModal()">
       <div class="benefit-banner-text">
-        <h3>금고 등급제 & 노마진 혜택 안내</h3>
+        <h3>육고 멤버십 등급제 & 노마진 혜택 안내</h3>
         <span class="benefit-banner-link">바로가기 ›</span>
       </div>
       <div class="pillars-3d-group" aria-hidden="true">
@@ -269,8 +269,8 @@
   <section class="bnb-catalog-section" id="best-seller-section">
     <div class="bnb-container">
       <div class="bnb-section-header">
-        <div class="bnb-title-en">BEST SELLER</div>
-        <h2 class="bnb-title-kr">금고 최다 반출 베스트셀러</h2>
+        <div class="bnb-title-en">SIGNATURE BEST</div>
+        <h2 class="bnb-title-kr">가장 사랑받는 시그니처 한우</h2>
         <button class="bnb-more-link" onclick="handleGnbClick('all', '#all-products-section')">More +</button>
       </div>
 
@@ -279,36 +279,36 @@
   </section>
 
   <!-- ========================================================================
-       6. BORN & BRED STYLE 'ALL PRODUCTS' (Two-Track Category Grid)
+       6. BORN & BRED STYLE 'ALL PRODUCTS' (Refined Luxury Category Tabs)
        ======================================================================== -->
   <section class="bnb-catalog-section" id="all-products-section" style="padding-top: 20px;">
     <div class="bnb-container">
       <div class="bnb-section-header">
-        <div class="bnb-title-en">ALL PRODUCTS</div>
-        <h2 class="bnb-title-kr">육고(肉庫) 원육 금고 컬렉션</h2>
+        <div class="bnb-title-en">CURATED COLLECTION</div>
+        <h2 class="bnb-title-kr">100% 한우 암소 마스터 컬렉션</h2>
 
-        <!-- Clean 4-Tab Filter Row (Fits 1 line on mobile) -->
+        <!-- Clean 4-Tab Filter Row -->
         <div class="bnb-filter-pills" role="tablist">
           <button class="bnb-filter-btn active" data-cat="all" onclick="filterVaultProducts('all')">
-            금고열기(전체)
+            전체 컬렉션
           </button>
-          <button class="bnb-filter-btn" data-cat="daily" onclick="filterVaultProducts('daily')">
-            일상반출
+          <button class="bnb-filter-btn" data-cat="dining" onclick="filterVaultProducts('dining')">
+            구이·스테이크
           </button>
-          <button class="bnb-filter-btn" data-cat="secret" onclick="filterVaultProducts('secret')">
-            시크릿코드
+          <button class="bnb-filter-btn" data-cat="special" onclick="filterVaultProducts('special')">
+            당일도축 특선
           </button>
           <button class="bnb-filter-btn" data-cat="gift" onclick="filterVaultProducts('gift')">
-            마스터금고
+            프레스티지 선물
           </button>
         </div>
       </div>
 
-      <!-- Compact Secret Drop Live Bar -->
+      <!-- Compact Butcher's Reserve Live Bar -->
       <div class="secret-fomo-bar">
         <div class="fomo-left">
-          <span class="fomo-live-badge">SECRET DROP</span>
-          <span class="fomo-title-text">당일 도축장 1++ 암소 특수부위 노마진 방출 (잔여 7팩)</span>
+          <span class="fomo-live-badge">당일도축 한정</span>
+          <span class="fomo-title-text">금일 도축장 발골 1++(No.9) 암소 특수부위 한정 수량 직송</span>
         </div>
         <div class="fomo-timer-digits" id="drop-countdown">02:38:45</div>
       </div>
@@ -323,7 +323,7 @@
   <section class="authority-section" id="authority-section">
     <div class="bnb-container">
       <div class="section-head-left">
-        <span class="section-eyebrow">WHY YUK.GO VAULT?</span>
+        <span class="section-eyebrow">OUR PHILOSOPHY</span>
         <h2 class="section-heading">
           백화점 반값 원가와 최상위 품질,<br />
           육고만이 가능한 3가지 이유
@@ -336,7 +336,7 @@
             <span class="auth-num-badge">01 · OWN SLAUGHTERHOUSE</span>
             <h3>직영 도축장 직접 보유로<br />완성한 원가 혁신</h3>
             <p>
-              외부 위탁 도축·경매 수수료가 발생하지 않습니다. 도축 직후 가장 신선한 골든타임에 최상급 원육을 자체 금고로 직입고하여 시중 백화점 반값 이하의 원가를 실현합니다.
+              외부 위탁 도축·경매 수수료가 발생하지 않습니다. 도축 직후 가장 신선한 골든타임에 최상급 원육을 자체 숙성고로 직입고하여 시중 백화점 반값 이하의 원가를 실현합니다.
             </p>
           </div>
           <div class="auth-stat-bar">
@@ -402,7 +402,7 @@
 
             <div>
               <div class="bar-row-label">
-                <span style="color: var(--seal-gold-light); font-weight: 800;">육고(肉庫) 직영 도축장 반출가</span>
+                <span style="color: var(--seal-gold-light); font-weight: 800;">육고(肉庫) 직영 도축장 직공급가</span>
                 <strong style="color: var(--seal-gold-light);">₩13,900 (-51%)</strong>
               </div>
               <div class="bar-track">
@@ -446,10 +446,10 @@
       <div class="section-head-left">
         <span class="section-eyebrow">UNBOXING EXPERIENCE · YUK-GO VERIFIED™</span>
         <h2 class="section-heading">
-          비밀 금고에서 막 반출된 귀한 선물을 여는 경험
+          소중한 분께 깊은 인상을 남기는 시그니처 패키징
         </h2>
         <p class="section-desc">
-          모든 진공 스킨팩 위 출고 일자·이력번호·담당 마스터 서명이 인쇄된 ‘육고 출고 승인(YUK-GO VERIFIED)’ 봉인 라벨이 부착됩니다.
+          모든 진공 스킨팩 위 출고 일자·이력번호·담당 마스터 서명이 인쇄된 ‘육고 품질 보증(YUK-GO VERIFIED)’ 코퍼 봉인 라벨이 부착됩니다.
         </p>
       </div>
 
@@ -462,7 +462,7 @@
           <div class="seal-card-top">
             <div>
               <div style="font-size: 1.05rem; font-weight: 800; color: var(--seal-gold-light);">
-                YUK-GO VERIFIED™ 출고 승인서 프리뷰
+                YUK-GO VERIFIED™ 보증 라벨 프리뷰
               </div>
               <div style="font-size: 0.78rem; color: var(--text-secondary);">
                 선물 수령인 성함을 입력해 봉인 라벨 각인을 미리 확인해 보세요.
@@ -517,20 +517,20 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
           <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
         </svg>
-        <span>금고탐색</span>
+        <span>전체컬렉션</span>
       </button>
       <button class="bottom-tab-btn" data-bnav="gift" onclick="handleBottomTab('gift', 'gift', '#all-products-section')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
           <rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8"/>
           <path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/>
         </svg>
-        <span>선물관</span>
+        <span>명품선물관</span>
       </button>
-      <button class="bottom-tab-btn" data-bnav="secret" onclick="handleBottomTab('secret', 'secret', '#all-products-section')">
+      <button class="bottom-tab-btn" data-bnav="special" onclick="handleBottomTab('special', 'special', '#all-products-section')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
           <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
         </svg>
-        <span>시크릿특가</span>
+        <span>당일특선</span>
       </button>
       <button class="bottom-tab-btn" data-bnav="verify" onclick="openTraceabilityModal('002-1498-8821')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
