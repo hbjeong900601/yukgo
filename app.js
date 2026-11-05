@@ -205,7 +205,6 @@ function createBnbCardHTML(item) {
         </button>
       </div>
       <div class="bnb-card-info">
-        <div class="bnb-card-cat">${item.categoryLabel}</div>
         <h3 class="bnb-card-title">${item.title}</h3>
         <p class="bnb-card-spec">${item.spec}</p>
         <div class="bnb-card-price-wrap">
@@ -214,7 +213,7 @@ function createBnbCardHTML(item) {
           <span class="bnb-origin-price">${formatKRW(item.originPrice)}</span>
         </div>
         <div class="bnb-unit-meta">
-          <span>${item.unitPriceText}</span>
+          <span>${item.unitPriceText.split(' (')[0]}</span>
           <span class="bnb-rating">★ ${item.rating} (${item.reviews})</span>
         </div>
       </div>
