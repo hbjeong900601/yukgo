@@ -910,37 +910,109 @@ a {
 .auth-card {
   background: var(--vault-surface);
   border: 1px solid var(--vault-border-subtle);
-  border-radius: 6px;
-  padding: 24px 20px;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.auth-card:hover {
+  border-color: var(--seal-gold);
+  transform: translateY(-3px);
+}
+
+.auth-card-media {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  background: #0d0d0f;
+  overflow: hidden;
+  border-bottom: 1px solid var(--vault-border-subtle);
+}
+
+.auth-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s var(--ease-out);
+}
+
+.auth-card:hover .auth-card-media img {
+  transform: scale(1.05);
+}
+
+.auth-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,12,0.35) 0%, rgba(10,10,12,0.05) 45%, rgba(15,15,18,0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 14px;
+}
+
+.auth-media-summary {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--seal-gold-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.auth-card-body {
+  padding: 20px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   justify-content: space-between;
 }
 
 .auth-num-badge {
   display: inline-block;
-  background: rgba(198, 147, 91, 0.14);
+  background: rgba(12, 12, 14, 0.85);
+  border: 1px solid rgba(198, 147, 91, 0.45);
   color: var(--seal-gold-light);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 3px;
-  margin-bottom: 12px;
   align-self: flex-start;
+  backdrop-filter: blur(6px);
 }
 
 .auth-card h3 {
-  font-size: 1.12rem;
+  font-size: 1.14rem;
   font-weight: 800;
   line-height: 1.35;
   margin-bottom: 8px;
 }
 
 .auth-card p {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.58;
+  margin-bottom: 16px;
+}
+
+.data-viz-head-with-thumb {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--vault-border-subtle);
+}
+
+.data-viz-thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid var(--vault-border);
+  flex-shrink: 0;
 }
 
 .auth-stat-bar {
